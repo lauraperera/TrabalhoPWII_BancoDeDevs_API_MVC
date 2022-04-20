@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-express-api",
+  "version": "1.0.0",
+  "description": "- Cliente (client) - faz um pedido;\r - Garçom (API) - anota o pedido em um bloquinho de notas;\r - Cozinha (server) - recebe o pedido através do bloquinho do garçon.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.0"
+  }
+}
