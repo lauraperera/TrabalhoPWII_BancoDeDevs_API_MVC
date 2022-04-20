@@ -1,0 +1,384 @@
+{
+	"info": {
+		"_postman_id": "78249486-c295-4871-8ac8-f1762a361b17",
+		"name": "API Banco de DEV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "listar admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjI1ZjVjYTFmZjEyNTYyZmMyOTQ0NjkwIiwiaWF0IjoxNjUwNDE3MTM3fQ.zS7_tWSAN8CAm8Vbf0HR688EdoVTd-pmf5pdkqcASEw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/admin",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mostrar admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjI1ZjVjYTFmZjEyNTYyZmMyOTQ0NjkwIiwiaWF0IjoxNjUwNDE3MTM3fQ.zS7_tWSAN8CAm8Vbf0HR688EdoVTd-pmf5pdkqcASEw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/admin/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"admin",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "625f5ca1ff12562fc2944690",
+									"description": "ID do admin a ser mostrado"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registrar admin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Laurinha\",\r\n    \"email\": \"laurinha@gmail.com\",\r\n    \"senha\": \"123123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/admin",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logar admin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"laurinha@gmail.com\",\r\n    \"senha\": \"123123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/admin/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"admin",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "atualizar admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjI1ZjVjYTFmZjEyNTYyZmMyOTQ0NjkwIiwiaWF0IjoxNjUwNDE5MjY4fQ.MXDFFkguLNX-S5DBMD2PonzEEFZcFWXf5Y2Oan_j_EE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Laurinha 2\",\r\n    \"email\": \"laurinha@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/admin/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"admin",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "625f61c10b5892ffe8cf5114",
+									"description": "ID do admin a ser atualizado"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remover admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjI1ODMyYTUwYjRiM2MyNWU5NTBhMWRhIiwiaWF0IjoxNjQ5OTYxMDA2fQ.PwOOTEb6vL-8HGoPYpR1QNfFN7x5GVl77jAVQMpcsmE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/admin/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"admin",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "625832a50b4b3c25e950a1da",
+									"description": "ID do admin a ser deletado"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "dev",
+			"item": [
+				{
+					"name": "listar devs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/dev",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"dev"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mostrar dev",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Atualizei\",\r\n    \"email\": \"a@com.cc\",\r\n    \"area\": \"ti\",\r\n    \"tecnologias\": \"a,b,c\",\r\n    \"senioridade\": \"Junior\",\r\n    \"experiencia\": \"nenhuma\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/dev/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"dev",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "625f73b2223c4d0ab4b5e12c",
+									"description": "ID do dev a ser mostrado"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastrar dev",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Mateus\",\r\n    \"email\": \"mateusz@email.com\",\r\n    \"area\": \"ti\",\r\n    \"tecnologias\": \"todas\",\r\n    \"senioridade\": \"Senior\",\r\n    \"experiencia\": \"sim\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/dev",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"dev"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "atualizar dev",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Atualizei\",\r\n    \"email\": \"a@com.cc\",\r\n    \"area\": \"ti\",\r\n    \"tecnologias\": \"a,b,c\",\r\n    \"senioridade\": \"Junior\",\r\n    \"experiencia\": \"nenhuma\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/dev/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"dev",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "625f689c7f7dbb7c714cb03b",
+									"description": "ID do dev a ser atualizado"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remover dev",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/dev/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"dev",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "62573b4eada3993bd1798d74",
+									"description": "ID do dev a ser atualizado"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:3000"
+		}
+	]
+}
