@@ -1,3 +1,40 @@
+# Sobre o projeto
+Este projeto foi desenvolvido como forma de avaliação para a disciplina de **Programação Web II** do curso Tecnologia em Análise e Desenvolvimento de Sistemas - IFSul, Campus Bagé. 
+
+A proposta solicitava o desenvolvimento de um projeto abordando técnicas básicas e aplicação de _framework_ Web com ORM. 
+
+Conteúdos **esssenciais** para o projeto: 
+- Servidor _http_ e seus verbos (GET, POST, PUT, DELETE);
+- Grupos de rotas;
+- Banco de dados (relacional ou não relacional);
+- Autenticação (_Token_);
+- Middleware;
+- Padrão MVC;
+- Criptografia (_Hash_).
+
+# Como rodar?
+1. Abra o projeto no _VSCode_;
+
+2. Digite **Ctrl + Shift + `** para abrir um novo terminal;
+
+3. Com o terminal aberto rode um dos comandos abaixo para instalar automaticamente as dependências do projeto:
+```
+$ yarn install //para gerenciador de pacotes yarn
+```
+```
+$ npm install //para gerenciador de pacotes npm
+```
+
+4. Após instaladas as dependências rode um dos comandos abaixo para iniciar a aplicação:
+```
+$ yarn start //para gerenciador de pacotes yarn
+```
+```
+$ npm start //para gerenciador de pacotes npm
+```
+
+5. Após estar com o servidor rodando, basta testar as rotas da API utilizando _Insomnia_ ou _Postman_
+
 # Instalações utilizadas:
 
 **Nodemon** (biblioteca pra restartar a aplicação a cada alteração)
