@@ -75,3 +75,22 @@ $ yarn add jsonwebtoken
 ```
 $ npm i jsonwebtoken
 ```
+
+# Informações complementares
+## Status das respostas
+- 100-199: respostas de informação
+- 200-299: respostas de sucesso
+- 300-399: redirecionamentos
+- 400-499: erros do cliente
+- 500-599: erros do servidor 
+
+##  Verbos HTTP
+- GET
+    - **Sem passagem de parâmetro**: retorna uma lista completa com todos os dados;
+    - **Com passagem de parâmetro**: retorna apenas os dados referentes ao parâmetro especificado;
+- POST
+    - Normalmente é utilizado **sem passagem de parâmetro** para inserir algum dado;
+- PUT: 
+    - Normalmente é utilizado **com passagem de parâmetro** para editar algum dado no recurso referida;
+- DELETE: 
+    - Utilizado para remover um recurso (**utilizar com passagem de parâmetro**) 

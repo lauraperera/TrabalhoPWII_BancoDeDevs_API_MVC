@@ -9,7 +9,7 @@ const { estaLogado } = require('../middlewares/estaLogado')
 
 //ROTAS PUBLICAS (pode acessar sem token)
 
-// fazer login do admin, usa POST (recebe o email e senha no corpo da req)
+//fazer login do admin, usa POST (recebe o email e senha no corpo da req)
 router.post('/login', AdminController.login)
 
 // criar admin, usa POST
@@ -18,16 +18,16 @@ router.post('/', AdminController.registrar)
 
 //ROTAS PRIVADAS (só se passar um token valido)
 
-// listar admins, usa GET
+//listar todos admins, usa GET
 router.get('/', estaLogado, AdminController.listar)
 
-// mostrar 1 admin especifico, usa GET
+//mostrar 1 admin especifico, usa GET
 router.get('/:id', estaLogado, AdminController.mostrar)
 
-// atualizar admin, usa PUT, recebe na url o ID do admin a ser atualizado
+//atualizar admin, usa PUT, recebe na url o ID do admin a ser atualizado
 router.put('/:id', estaLogado, AdminController.atualizar)
 
-// deletar admin, usa DELETE, recebe na url o ID do admin a ser atualizado
+//deletar admin, usa DELETE, recebe na url o ID do admin a ser atualizado
 router.delete('/:id', estaLogado, AdminController.remover)
 
 

@@ -1,13 +1,7 @@
 const jwt = require('jsonwebtoken')
 const Admin = require('../models/Admin')
 
-/**
- * MIDDLEWARE que só deixa passar se o usuario passar um token valido
- * 
- * @param {import('express').Request} req 
- * @param {import('express').Response} res 
- * @param {import('express').NextFunction} next 
- */
+//middleware que só deixa passar se o user tiver um token de admin
 exports.estaLogado = (req, res, next) => {
     // remove o "Bearer " e pega só o token da requisição
     const token = (req.headers.authorization || '').replace(/^Bearer /i, '')
