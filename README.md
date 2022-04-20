@@ -2,24 +2,39 @@
 
 **Nodemon** (biblioteca pra restartar a aplicação a cada alteração)
 ```
-npm install -g nodemon
+$ yarn add nodemon
+```
+```
+$ npm i nodemon
 ```
 **Express** (framework pra trabalhar com servidor http)
 ```
-npm install express --save
+$ yarn add express
+```
+```
+$ npm i express --save
 ```
 **Mongoose** (biblioteca pra fazer conexão com banco mongodb)
 ```
-npm add express 
+$ yarn add mongoose
+```
+```
+$ npm i mongoose
 ```
 
 **Bcrypt** (biblioteca pra fazer _hash_ de senha)
 ```
-npm install bcrypt
+$ yarn add bcrypt
+```
+```
+$ npm i bcrypt
 ```
 
 **Jsonwebtoken** (padrão de autenticação/geração de _token_)
 
 ```
-npm install jsonwebtoken
+$ yarn add jsonwebtoken
+```
+```
+$ npm i jsonwebtoken
 ```
